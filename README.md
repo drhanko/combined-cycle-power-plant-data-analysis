@@ -86,31 +86,45 @@ This project combines statistical modeling and machine learning approaches to an
 
 ---
 
-### 🔹 Multiple Linear Regression
-Model:
+### 🔹 Rationale for Model Selection
 
-- Includes:
-  - Main effects
-  - Pairwise interaction terms
-- Evaluated using:
-  - Coefficients
-  - **p-values**
+We selected three types of models—Multiple Linear Regression, Polynomial Regression, and KNN—to capture different levels of model complexity and data structure.
+
+- **Multiple Linear Regression**
+  - Serves as a baseline model  
+  - Assumes a linear relationship between predictors and the response  
+  - Provides high interpretability through coefficients  
+
+- **Polynomial Regression (Degree = 2)**
+  - Extends the linear model by including:
+    - Pairwise interaction terms  
+    - Quadratic (nonlinear) terms  
+  - Allows us to capture moderate nonlinear relationships and interactions  
+  - Maintains some interpretability compared to more complex models  
+
+- **KNN (Standardized)**
+  - A non-parametric model that makes no assumption about the functional form  
+  - Captures complex, local, and nonlinear patterns in the data  
+  - Used to evaluate the upper bound of predictive performance  
 
 ---
 
-### 🔹 KNN Regression
-- Implemented using `scikit-learn`
-- Compared:
-  - Raw features
-  - Standardized features
-- Tested **k = 1 to 100**
+### 📌 Insight
 
+- These three models represent increasing levels of flexibility:
+  - Linear → Polynomial → KNN  
+
+- This progression allows us to:
+  - Understand whether the relationship is linear  
+  - Detect the presence of interaction and nonlinear effects  
+  - Evaluate the trade-off between interpretability and predictive accuracy  
+
+> By comparing these models, we can determine the appropriate level of model complexity for the dataset.
 ---
 
 ### 🔹 Hyperparameter Tuning
 - Used **10-fold cross-validation (on training set)**
 - Selected optimal k by minimizing **MSE**
-- Best k (scaled model): **13**
 
 ---
 
@@ -124,7 +138,7 @@ Model:
 
 ## 📊 Results
 
-## 🔹 Multiple Linear Regression
+## 🔹 Multiple Linear Regression ＆ Polynomial Regression
 
 ### 🔹 Comparison of Regression Coefficients
 ![ML](images/Comparison_of_Regression_Coefficients.png)
