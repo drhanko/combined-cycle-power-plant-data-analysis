@@ -187,8 +187,10 @@ Model:
 |-------------|------------|--------|---------------|----------|------------|
 | Raw Features | **6** | **16.73** | **5** | **15.70** | Higher MSE, lower predictive performance |
 | Standardized Features | **4** | **15.47** | **4** | **14.07** | Lower MSE, better performance |
-![ML](images/KNN_Regression_raw_results.png)
-![ML](images/KNN_Regression_scaled_results.png)
+
+
+![KNN](images/KNN_Regression_raw_results.png)
+![KNN](images/KNN_Regression_scaled_results.png)
 
 ---
 
