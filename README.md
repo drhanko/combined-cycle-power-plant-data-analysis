@@ -71,22 +71,6 @@ Using cross-validation helps produce more reliable results.
 
 ---
 
-## 🔷 What the notebook does
-
-The notebook covers:
-
-1. Data loading and exploration
-2. Summary statistics and pairplots
-3. Simple linear regression for each predictor
-4. Multiple linear regression
-5. Comparison between simple and multiple regression coefficients
-6. Nonlinear association using cubic regression
-7. Interaction terms in a full regression model
-8. Model improvement using polynomial features
-9. KNN regression with and without standardization
-10. Comparison of KNN and linear regression performance
-
----
 ## 🧠 Methodology
 
 This project combines statistical modeling and machine learning approaches to analyze and predict the power output (`PE`).
