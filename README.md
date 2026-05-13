@@ -4,6 +4,21 @@ This project analyzes the **Combined Cycle Power Plant (CCPP)** dataset and comp
 
 ---
 
+## 🚀 Highlights
+
+- 📉 **Best Model:** KNN with standardized features achieves the lowest test MSE (**14.07**)  
+- 📈 **Performance Gain:** ~**32% improvement** over linear regression (20.78 → 14.07)  
+- 🔄 **Nonlinearity Detected:** Polynomial and KNN outperform linear models, indicating nonlinear relationships  
+- 🔗 **Interaction Effects:** Significant interactions exist between predictors, but full interaction models suffer from multicollinearity  
+- ⚖️ **Model Trade-off:**  
+  - Linear → most interpretable  
+  - Polynomial → balanced  
+  - KNN → best performance  
+- ⚙️ **Feature Scaling Matters:** Standardization significantly improves KNN results  
+- 📊 **Robust Evaluation:** Cross-validation used to select optimal k and avoid overfitting
+
+---
+
 ## 📂 Dataset
 The Combined Cycle Power Plant (CCPP) dataset contains operational data collected from a real-world power plant over approximately 6 years (2006–2011). The dataset is commonly used for regression tasks, where the goal is to predict the plant’s electrical energy output based on environmental conditions.
 
@@ -56,7 +71,7 @@ Using cross-validation helps produce more reliable results.
 
 ---
 
-## What the notebook does
+## 🔷 What the notebook does
 
 The notebook covers:
 
